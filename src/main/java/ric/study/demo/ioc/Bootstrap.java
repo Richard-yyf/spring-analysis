@@ -1,5 +1,6 @@
 package ric.study.demo.ioc;
 
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import ric.study.demo.ioc.FactoryBeanDemoSet.Product;
 
@@ -11,6 +12,10 @@ public class Bootstrap {
 
     public static void main(String[] args) throws Exception {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("test-config.xml");
+//        HolderA holderA = (HolderA) context.getBean("holderA");
+//        HolderB holderB = (HolderB) context.getBean("holderB");
+//        holderA.tell();
+//        holderB.tell();
 
         // ========= FactoryBean test demo start =====================
         Product product = (Product) context.getBean("product");
