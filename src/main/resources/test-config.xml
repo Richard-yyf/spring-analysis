@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:jee="http://www.springframework.org/schema/jee"
-       xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:task="http://www.springframework.org/schema/task" xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
-       xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
-        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd
-        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
-        http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd http://dubbo.apache.org/schema/dubbo http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
-    <bean id="produceLocation" class="base.ioc.FactoryBeanDemoSet.ProduceLocation">
+    <bean id="produceLocation" class="ric.study.demo.ioc.FactoryBeanDemoSet.ProduceLocation">
         <property name="locationName" value="杭州"/>
         <property name="pricePerPerKm" value="151.01"/>
         <property name="distanceKm" value="3.1"/>
     </bean>
 
-    <bean id="material" class="base.ioc.FactoryBeanDemoSet.Material">
+    <bean id="material" class="ric.study.demo.ioc.FactoryBeanDemoSet.Material">
         <property name="name" value="巧克力豆"/>
         <property name="pricePerGram" value="100"/>
         <property name="weight" value="50"/>
     </bean>
 
-    <bean id="product" class="base.ioc.FactoryBeanDemoSet.ProductFactoryBean">
+    <bean id="product" class="ric.study.demo.ioc.FactoryBeanDemoSet.ProductFactoryBean">
         <property name="material" ref="material"/>
         <property name="produceLocation" ref="produceLocation"/>
     </bean>
@@ -33,7 +23,7 @@
 
 
 
-    <bean id="car" class="base.ioc.FactoryBeanDemoSet.CarFactoryBean" >
+    <bean id="car" class="ric.study.demo.ioc.FactoryBeanDemoSet.CarFactoryBean" >
         <property name="carInfo" value="超级跑车,400,2000000"/>
     </bean>
 

@@ -1,4 +1,4 @@
-package base.ioc.FactoryBeanDemoSet;
+package ric.study.demo.ioc.FactoryBeanDemoSet;
 
 import lombok.Builder;
 import lombok.Data;

@@ -1,9 +1,9 @@
-package base.ioc;
+package ric.study.demo.ioc;
 
-import base.ioc.FactoryBeanDemoSet.Product;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.ClassPathResource;
+import ric.study.demo.ioc.FactoryBeanDemoSet.Product;
 
 /**
  * @author Richard_yyf

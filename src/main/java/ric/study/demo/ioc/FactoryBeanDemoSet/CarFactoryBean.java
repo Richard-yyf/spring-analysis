@@ -1,4 +1,4 @@
-package base.ioc.FactoryBeanDemoSet;
+package ric.study.demo.ioc.FactoryBeanDemoSet;
 
 import org.springframework.beans.factory.FactoryBean;
 
