@@ -3,19 +3,19 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
-    <bean id="produceLocation" class="ric.study.demo.ioc.FactoryBeanDemoSet.ProduceLocation">
+    <bean id="produceLocation" class="ric.study.demo.ioc.factory_bean_demo_set.ProduceLocation">
         <property name="locationName" value="杭州"/>
         <property name="pricePerPerKm" value="151.01"/>
         <property name="distanceKm" value="3.1"/>
     </bean>
 
-    <bean id="material" class="ric.study.demo.ioc.FactoryBeanDemoSet.Material">
+    <bean id="material" class="ric.study.demo.ioc.factory_bean_demo_set.Material" >
         <property name="name" value="巧克力豆"/>
         <property name="pricePerGram" value="100"/>
         <property name="weight" value="50"/>
     </bean>
 
-    <bean id="product" class="ric.study.demo.ioc.FactoryBeanDemoSet.ProductFactoryBean">
+    <bean id="product" class="ric.study.demo.ioc.factory_bean_demo_set.ProductFactoryBean">
         <property name="material" ref="material"/>
         <property name="produceLocation" ref="produceLocation"/>
     </bean>
@@ -23,7 +23,7 @@
 
 
 
-    <bean id="car" class="ric.study.demo.ioc.FactoryBeanDemoSet.CarFactoryBean" >
+    <bean id="car" class="ric.study.demo.ioc.factory_bean_demo_set.CarFactoryBean" >
         <property name="carInfo" value="超级跑车,400,2000000"/>
     </bean>
 

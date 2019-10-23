@@ -1,4 +1,4 @@
-package ric.study.demo.ioc.InitAndDestorySequenceDemoSet;
+package ric.study.demo.ioc.init_and_destory_sequence_demo_set;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

@@ -2,7 +2,7 @@ package ric.study.demo.ioc;
 
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import ric.study.demo.ioc.FactoryBeanDemoSet.Product;
+import ric.study.demo.ioc.factory_bean_demo_set.Product;
 
 /**
  * @author Richard_yyf

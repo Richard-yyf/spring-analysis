@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<bean name="myBeanFactoryAware" class="ric.study.demo.ioc.life_cycle_demo_set.MyBeanFactoryAware" />-->
+    <!--<bean name="myBeanNameAware" class="ric.study.demo.ioc.life_cycle_demo_set.MyBeanNameAware" />-->
+    <bean name="myBeanPostProcessor" class="ric.study.demo.ioc.life_cycle_demo_set.MyBeanPostProcessor" />
+    <bean name="personBean" class="ric.study.demo.ioc.life_cycle_demo_set.Person"
+          init-method="init" destroy-method="destroyMethod">
+        <property name="name" value="Richard Yi" />
+    </bean>
+
+</beans>

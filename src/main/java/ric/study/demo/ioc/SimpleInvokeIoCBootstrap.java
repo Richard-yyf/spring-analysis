@@ -3,7 +3,7 @@ package ric.study.demo.ioc;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 import org.springframework.core.io.ClassPathResource;
-import ric.study.demo.ioc.FactoryBeanDemoSet.Product;
+import ric.study.demo.ioc.factory_bean_demo_set.Product;
 
 /**
  * @author Richard_yyf
