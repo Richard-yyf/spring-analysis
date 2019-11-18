@@ -12,6 +12,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class PointCutConfig {
 
+    // 指定 bean
+    @Pointcut("bean(testAopBean)")
+    public void isTestAopBean() {}
+
     // controller 层
     @Pointcut("bean(testController)")
     public void inControllerLayer() {}
@@ -21,9 +25,11 @@ public class PointCutConfig {
     @Pointcut("within(ric.study.demo.aop.svc..*)")
     public void inSvcLayer() {}
 
+    // 指定的方法
     @Pointcut("execution(* testExecution(..))")
     public void anyTestMethod() {}
 
+    // 指定注解
     @Pointcut("@annotation(ric.study.demo.aop.HaveAop)")
     public void withAnnotation() {}
 }
